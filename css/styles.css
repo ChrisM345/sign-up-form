@@ -100,9 +100,29 @@ p.right{
 
 .right-side-bottom{
     height: 30%;
+    padding-left: 50px;
 }
 
+.button{
+    padding-top: 50px;
+}
+.create-button{
+    background-color: #596D48;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 15px;
+    font-size: 1rem;
+}
 
+p.login{
+    font-weight: normal;
+    padding-left: 0;
+    padding-top: 25px;
+}
+
+span{
+    color: #596D48;
+}
 @font-face {
     font-family: norse-bold;
     src: url("../fonts/Norse-Bold.otf");
