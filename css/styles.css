@@ -96,6 +96,8 @@ p.right{
 .right-side-middle{
     background-color: white;
     height: 40%;
+    padding-left: 50px;
+    padding-top: 50px
 }
 
 .right-side-bottom{
@@ -123,6 +125,43 @@ p.login{
 span{
     color: #596D48;
 }
+
+.form-row{
+    font-size: .8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 15px;
+}
+
+input{
+    outline: none;
+    border: solid lightgray 1px;
+    padding: 10px;
+    width: 250px;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+    border: solid lightblue 1px;
+}
+
+
+.entire-form{
+    display: flex;
+    gap: 50px;
+    height: 15vh;
+    align-items: center;
+    padding-top: 15px;
+    /* width: calc((100% - var(--left-side-width)) / 1); */
+}
+
+.form-left-side{
+}
+
+.form-right-side{
+}
+
+
 @font-face {
     font-family: norse-bold;
     src: url("../fonts/Norse-Bold.otf");
