@@ -1,12 +1,17 @@
 html {
     background-color: #f2f2f2;
     font-size: 16px;
+}
+
+*{
     padding: 0;
     margin: 0;
 }
 
+
 h3{
-    margin: 0;
+    padding-top: 50px;
+    min-height: 50px;
 }
 
 a{
@@ -16,10 +21,6 @@ a{
 
 :root{
     --left-side-width: 35%
-}
-
-body{
-    margin: 0;
 }
 
 .container{
@@ -46,7 +47,6 @@ body{
     justify-content: center;
     padding: 2.5px 0px;
     margin-top: 40%;
-
 }
 
 .odin-pic{
@@ -68,8 +68,6 @@ body{
 p{
     color: white;
     text-align: center;
-    padding: 0;
-    margin: 0;
     
 }
 
@@ -97,7 +95,6 @@ p.right{
     background-color: white;
     height: 40%;
     padding-left: 50px;
-    padding-top: 50px
 }
 
 .right-side-bottom{
@@ -108,6 +105,7 @@ p.right{
 .button{
     padding-top: 50px;
 }
+
 .create-button{
     background-color: #596D48;
     color: white;
@@ -134,17 +132,20 @@ span{
 
 input{
     outline: none;
-    border: solid lightgray 1px;
+    border: solid lightgray 2px;
     padding: 10px;
     width: 250px;
 }
 
 input:focus{
-    outline: none;
-    border: none;
-    border: solid lightblue 1px;
+    border: solid lightblue 2px;
+    box-shadow: 2px 2px 2px lightblue;
 }
 
+input:invalid{
+    border: solid red 2px;
+    box-shadow: 2px 2px 2px red;
+}
 
 .entire-form{
     display: flex;
@@ -152,15 +153,11 @@ input:focus{
     height: 15vh;
     align-items: center;
     padding-top: 15px;
-    /* width: calc((100% - var(--left-side-width)) / 1); */
 }
 
-.form-left-side{
+.password-validation{
+    position: fixed;
 }
-
-.form-right-side{
-}
-
 
 @font-face {
     font-family: norse-bold;

@@ -49,6 +49,7 @@
                             <div class="form-row">
                                 <label for="password">PASSWORD</label><br>
                                 <input type="password" name="password" id="password">
+                                <div class="password-validation"></div>
                             </div>
                         </div>
 
@@ -60,12 +61,13 @@
 
                             <div class="form-row">
                                 <label for="phone">PHONE NUMBER</label><br>
-                                <input type="tel" name="phone" id="phone">
+                                <input type="tel" name="phone" id="phone" placeholder="888 888 8888" pattern="[0-9]{3}[0-9]{3} [0-9]{4}">
                             </div>
 
                             <div class="form-row">
                                 <label for="confirm-password">CONFIRM PASSWORD</label><br>
                                 <input type="password" name="confirm-password" id="confirm-password">
+                                <div class="password-validation"></div>
                             </div>
                         </div>
                     </div>
@@ -80,5 +82,7 @@
 
         </div>
     </div>
+    <script src="./scripts/script.js"></script>
 </body>
+
 </html>
